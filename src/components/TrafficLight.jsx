@@ -27,9 +27,9 @@ const TrafficLight = () => {
       <Protector />
       <Protector />
       <Protector />
-      <Light color="red" isActive={false} />
-      <Light color="yellow" isActive={true} />
-      <Light color="green" isActive={false} />
+      <Light color="red" isActive={`${state === RED ? 'active red' : ''}`} />
+      <Light color="yellow" isActive={`${state === YELLOW ? 'active yellow' : ''}`} />
+      <Light color="green" isActive={`${state === GREEN ? 'active green' : ''}`} />
     </div>
   );
 };

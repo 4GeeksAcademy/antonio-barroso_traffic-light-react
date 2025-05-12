@@ -30,7 +30,7 @@ const CrossLight = () => {
       <div className="crosslight-container">
         <Protector />
         <Protector />
-        <div className={`cross-light ${state === RED ? 'active red' : 'inactive'}`}>
+        <div className={`cross-light ${state === RED ? 'active red' : ''}`}>
           {state === RED && (
             <FaHandPaper size={36} className={`${countdown <= 5 ? 'warning' : ''}`} />
           )}
@@ -40,7 +40,7 @@ const CrossLight = () => {
             </span>
           )}
         </div>
-        <div className={`cross-light ${state === GREEN ? 'active green' : 'inactive'}`}>
+        <div className={`cross-light ${state === GREEN ? 'active green' : ''}`}>
           {state === GREEN && (
             <FaWalking size={36} className={`${countdown <= 5 ? 'warning' : ''}`} />
           )}
